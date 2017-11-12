@@ -68,6 +68,7 @@ You can run the test by clicking the right-button on the test file and choosing 
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Spring Boot](https://projects.spring.io/spring-boot/) - The framework used
 * [MongoDB Java Driver](https://mongodb.github.io/mongo-java-driver/) - The Java driver used
+* [MongoDB](https://www.mongodb.com) - The MongoDB database
 * [Morphia](https://mongodb.github.io/morphia/) - The Java Object Document Mapper for MongoDB
 
 
