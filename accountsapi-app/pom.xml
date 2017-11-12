@@ -106,19 +106,26 @@
                     <target>1.7</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <executions>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>jar-test-classes</id>
+						<phase>package</phase>
+						<goals>
+							<goal>test-jar</goal>
+						</goals>
+					</execution>
                     <execution>
-                        <id>jar-test-classes</id>
+                        <id>jar-classes</id>
                         <phase>package</phase>
                         <goals>
-                            <goal>test-jar</goal>
+                            <goal>jar</goal>
                         </goals>
                     </execution>
-                </executions>
-            </plugin>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
