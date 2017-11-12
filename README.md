@@ -20,18 +20,18 @@ Therefore, I chose MongoDB, which is a non-relational database (NoSQL) and it is
 2. Install MongoDB and run it on terminal.
 3. Build project using Maven (do not forget to add dependency of Transaction API project on Account API project).
 4. All other dependencies are already configured.
-5. Add run configuration for each project. 
+5. Add run configuration (Spring Boot) for each project. 
 6. Run project Account API to add some accounts.
-7. Both databases are executed in different ports: 'accountdb': 8080 and 'db': 8081
-8. Open Postman and add some accounts in JSON format, using POST HTTP method (http://localhost:8080/accounts).
+7. Both databases are executed in different ports: 'accountdb': 8081 and 'db': 8082
+8. Open Postman and add some accounts in JSON format, using POST HTTP method (http://localhost:8081/accounts).
 9. Open Robo 3T and create a new connection for MongoDB.
 10. You will see that a collection has been created for the "Account.class" in 'accountdb' database.
 11. Now, run Transaction API project and add some transactions.
-12. Open Postman again and add some transactions in JSON format, using POST HTTP method (http://localhost:8081/transactions).
+12. Open Postman again and add some transactions in JSON format, using POST HTTP method (http://localhost:8082/transactions).
 13. You will see that a collection has been created for the "Transaction.class" in 'db' database on Robo 3T.
-14. Use PATCH HTTP method (http://localhost:8081/payments/tracking/{account_id}) to execute calculations.
+14. Use PATCH HTTP method (http://localhost:8082/payments/tracking/{account_id}) to execute calculations.
 15. You will see that another collection has been created for the "Payment.clas" in "db" database on Robo 3T.
-16. Now you can go back to port 8080 and use PATCH HTTP method (http://localhost:8080/accounts/{id}).
+16. Now you can go back to port 8081 and use PATCH HTTP method (http://localhost:8081/accounts/{id}).
 17. Go back to Robo 3T application and you will see that the Account.class collection has been updated.
 
 
