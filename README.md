@@ -45,7 +45,7 @@ Therefore, I chose MongoDB, which is a non-relational database (NoSQL) and it is
 7. Postman (Google extension plugin)
 8. Robo 3T
 
-##Installation
+## Installation
 
 To install MongoDB in your computer, execute the following commands on terminal:
 
