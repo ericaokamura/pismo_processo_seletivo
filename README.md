@@ -20,7 +20,7 @@ Therefore, I chose MongoDB, which is a non-relational database (NoSQL) and it is
 2. Install MongoDB and run it on terminal.
 3. Build project using Maven (do not forget to add dependency of Transaction API project on Account API project).
 4. All other dependencies are already configured.
-5. Add run configuration (Spring Boot) for each project. 
+5. Add run configuration (using Spring Boot - embedded Tomcat) for each project. 
 6. Run project Account API to add some accounts.
 7. Both databases are executed in different ports: 'accountdb': 8081 and 'db': 8082
 8. Open Postman and add some accounts in JSON format, using POST HTTP method (http://localhost:8081/accounts).
@@ -51,7 +51,7 @@ Therefore, I chose MongoDB, which is a non-relational database (NoSQL) and it is
 To install MongoDB in your computer, execute the following commands on terminal:
 
 
-1. Create a directory /data/db/ anywhere in your computer and go to this directory and execute: $ brew install mongod
+1. Create a directory <ANY_PATH>/data/db/ anywhere in your computer and go to this directory and execute: $ brew install mongod
 2. Go to the MongoDB installation directory and execute: $ export PATH=<MONGODB_INSTALLATION_PATH>/bin:$PATH
 3. Then, in the same directory, execute: $ mongod --dbpath <ANY_PATH>/data/db
 
@@ -81,4 +81,5 @@ You can run the test by clicking the right-button on the test file and choosing 
 
 * My parents
 * Friends
+* Stack Overflow
 
